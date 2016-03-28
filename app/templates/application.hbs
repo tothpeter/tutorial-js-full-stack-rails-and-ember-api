@@ -2,7 +2,7 @@
   <div class="container">
     {{#link-to "application" class="navbar-brand"}}Relationship{{/link-to}}
 
-    <div class="pull-sm-rigth">
+    <div class="pull-sm-right">
       {{#if session.isAuthenticated}}
         <button class="btn btn-secondary-outline" {{action "logout"}}>Logout</button>
       {{else}}

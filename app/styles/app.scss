@@ -1,1 +1,11 @@
-@import "../../bower_components/bootstrap/scss/bootstrap-flex"
+@import "../../bower_components/bootstrap/scss/bootstrap-flex";
+
+body {
+  background: #DDD;
+}
+
+.main-wrapper {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0, .35);
+}

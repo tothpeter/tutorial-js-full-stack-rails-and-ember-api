@@ -1,3 +1,37 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<nav class="navbar navbar-full navbar-dark bg-primary">
+  <div class="container">
+    {{#link-to "application" class="navbar-brand"}}Relationship{{/link-to}}
+    <div class="pull-sm-rigth">
+      {{!-- Login/Logout --}}
+    </div>
+  </div>
+</nav>
+<div class="container main-wrapper">
+  <div class="row">
+    <nav class="col-sm-2">
+      <ul class="nav nav-stacked nav-pills">
+        <li class="nav-item">
+          {{#link-to "application" class="nav-link"}}Contacts{{/link-to}}
+        </li>
+        <li class="nav-item">
+          {{#link-to "application" class="nav-link"}}Companies{{/link-to}}
+        </li>
+        <li class="nav-item">
+          {{#link-to "application" class="nav-link"}}Projects{{/link-to}}
+        </li>
+        <li class="nav-item">
+          {{#link-to "application" class="nav-link"}}Offers{{/link-to}}
+        </li>
+        <li class="nav-item">
+          {{#link-to "application" class="nav-link"}}Tasks{{/link-to}}
+        </li>
+      </ul>
+    </nav>
+    <section id="main" class="col-sm-7">
+      {{outlet}}
+    </section>
+    <asdie class="col-sm-3">
+      Task list
+    </asdie>
+  </div>
+</div>

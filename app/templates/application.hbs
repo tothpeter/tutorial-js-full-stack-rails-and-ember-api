@@ -1,8 +1,13 @@
 <nav class="navbar navbar-full navbar-dark bg-primary">
   <div class="container">
     {{#link-to "application" class="navbar-brand"}}Relationship{{/link-to}}
+
     <div class="pull-sm-rigth">
-      {{!-- Login/Logout --}}
+      {{#if session.isAuthenticated}}
+        <button class="btn btn-secondary-outline" {{action "logout"}}>Logout</button>
+      {{else}}
+        <button class="btn btn-secondary-outline" {{action "login"}}>Login</button>
+      {{/if}}
     </div>
   </div>
 </nav>
